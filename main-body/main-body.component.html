@@ -1,0 +1,196 @@
+<!-- <app-header></app-header> -->
+
+<header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 col-12">
+        <div class="btn-group">
+          <button (click)="logoutProcess()" class="btn border my-md-3 text-white"
+            style="font-family: 'Gugi', cursive; text-transform: uppercase;">
+            Sign Out
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 text-center">
+        <h2 class="my-md-3 site-title text-white font-weight-bold">GIFTKART</h2>
+      </div>
+      <div class="col-md-4 col-12 text-right">
+        <p class="my-md-4 header-links ">
+          <a href="#" class="px-2 text-white">Sign in</a>
+          <a href="#" class="px-2 text-white">Create an Account</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex align-content-center justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="btn btn-outline-info nav-link active rounded-pill" href="#">HOME<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-info nav-link" routerLink="/shop">FEATURES</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-info nav-link" routerLink="/cart">COLLECTION</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-info nav-link" routerLink="/shop">SHOP</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-info nav-link" routerLink="/cart">ABOUT US</a>
+        </li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</header>
+
+
+<!-- slider -->
+<div class="container-fluid p-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/gift_bg_6.jpg" class="d-block w-100" style="height:500px;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/gift_bg_3.jpg" class="d-block w-100" style="height:500px;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/gift_bg.jpg" class="d-block w-100" style="height:500px;" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <h1 class="text-center" style="font-family: var(--gugi);">Catogories</h1>
+  <div class="card-deck">
+    <div class="card">
+      <img src="assets/img/chocolate.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title btn btn-primary">Card title</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/jewellery_2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title btn btn-secondary">Card title</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/religious.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title btn btn-success">Card title</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/fashion.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title btn btn-danger">Card title</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/mobile_3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title btn btn-warning">Card title</h5>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/img/Home_and_living_2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title btn btn-info">Card title</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <app-footer></app-footer> -->
+
+<footer>
+  <div class="footer-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+          <h1>GIFTKART</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolore autem quis aspernatur
+            perferendis, quibusdam quidem veritatis officia tempore, laboriosam reiciendis rerum ad adipisci iste ipsam
+            quos quisquam eius obcaecati.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+          <h2>Useful Link</h2>
+          <ul>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
+          <h2>Follow Us</h2>
+          <p>Please Follow us on our Social Media Profile in order to keep updated.</p>
+          <a href="#">
+            <fa-icon type="button" [icon]="faFacebook"></fa-icon>
+          </a>
+          <a href="#">
+            <fa-icon type="button" [icon]="faTwitter"></fa-icon>
+          </a>
+          <a href="#">
+            <fa-icon type="button" [icon]="faLinkedin"></fa-icon>
+          </a>
+          <a href="#">
+            <fa-icon type="button" [icon]="faGooglePlus"></fa-icon>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
+          <h2>Our Services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nulla quidem omnis labore nostrum illum
+            voluptatibus. Quibusdam eius veniam inventore autem! Ducimus quis soluta iste laboriosam vitae nisi ut
+            velit.</p>
+          <input type="email" name="" id="">
+          <input type="submit" value="Subscribe">
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="footer-bottom-text">All Right reserved by &copy; GiftKart.2019</p>
+</footer>
+
+
+
+
+
+<app-shop></app-shop>
+
+
+<app-cart></app-cart>

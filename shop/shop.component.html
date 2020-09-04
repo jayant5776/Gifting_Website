@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6 col-12" [formGroup]="fbFormGroup">
+      <div>
+        <h1>Add To Cart</h1>
+      </div>
+      <div class="form-group">
+        <label for="GiftId">GiftId</label>
+        <input type="text" class="form-control" id="GiftId" placeholder="GiftId" formControlName="GiftId">
+      </div>
+      <div class="form-group">
+        <label for="GiftName">GiftName</label>
+        <input type="text" class="form-control" id="GiftName" placeholder="GiftName" formControlName="GiftName">
+      </div>
+      <div class="form-group">
+        <label for="Price">Price</label>
+        <input type="text" class="form-control" id="Price" placeholder="Price" formControlName="Price">
+      </div>
+      <div class="form-group">
+        <label for="Rating">Rating</label>
+        <input type="text" class="form-control" id="Rating" placeholder="Rating" formControlName="Rating">
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary mt-3"  [disabled]="!fbFormGroup.valid" (click)="addToCart()">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>

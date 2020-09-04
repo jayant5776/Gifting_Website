@@ -1,0 +1,20 @@
+<p>cart works!</p>
+
+<div class="container mt-3 mb-3 bg-light-gray">
+  <div class="row justify-content-center">
+    <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+      <div>
+        <h1>CART</h1>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-danger" (click)="makeCall()">View Cart</button>
+      </div>
+
+      <div class="border border-warning rounded-pill justify-content-center align-items-center m-3 p-2"
+        style="height: 110px;" *ngFor="let item of list">
+        {{item.title}}
+      </div>
+    </div>
+  </div>
+</div>
